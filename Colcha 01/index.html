@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="pageLoaded()">
+
+<div class="container">
+
+<div class="container__controls">
+    <div class="logos">
+        <a href="http://www.icesi.edu.co" target="_blank" class="logo"><img src="assets/img/logo_icesi.png" alt=""></a>
+        <a href="http://www.icesi.edu.co/elcosturero/" target="_blank" class="logo"><img src="assets/img/logo_elcosturero.png" alt=""></a>
+        <a href="http://www.icesi.edu.co/elcosturero/" target="_blank" class="logo"><img src="assets/img/logo_colcha.png" alt=""></a>
+    </div>
+
+    <figure class="arrow-icon" onclick="moveController('up')">
+        <img src="assets/img/arrow_up.svg" alt="">
+    </figure>
+    <div class="left-rigth-arrows">
+        <figure  class="arrow-icon" onclick="moveController('left')">
+            <img src="assets/img/arrow_left.svg" alt="">
+        </figure>
+        
+        <figure class="visor">
+            <img class="visor__img" src="" alt="">
+        </figure>
+
+        <figure class="arrow-icon" onclick="moveController('rigth')">
+            <img src="assets/img/arrow_rigth.svg" alt="">
+        </figure>
+    </div>
+    <figure class="arrow-icon"  onclick="moveController('down')">
+        <img src="assets/img/arrow_down.svg" alt="">
+    </figure>
+
+<div class="container-audio">
+    <audio controls>
+        <source class="audio" src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <p class="no-audio"><span>No hay audio</span></p>
+    <br>
+    <h4 style="text-align: center">Retazo # <span class="id-retazo"></span></h4>
+</div>
+</div>
+
+<div class="container-colcha">
+    <div class="colcha">
+
+        <img class="colcha__original" src="assets/img/colcha.jpg" alt="">
+        <img class="colcha__feedback" src=""  alt="">
+        <img class="colcha__feedback-clicked" src=""  alt="">
+
+    </div>
+
+</div>
+</div>
+
+<script src="retazo.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
